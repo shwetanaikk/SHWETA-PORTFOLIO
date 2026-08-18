@@ -5506,3 +5506,673 @@ body,
     align-items: center !important;
   }
 }
+
+/* =====================================================
+   MOBILE RESPONSIVE FIX
+   ===================================================== */
+
+@media (max-width: 768px) {
+
+  /* ---------- GLOBAL ---------- */
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  /* ---------- NAVBAR ---------- */
+
+  nav {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 70px !important;
+
+    padding: 0 18px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+
+    overflow: hidden !important;
+  }
+
+  nav > a:first-child {
+    flex-shrink: 0;
+    font-size: 25px !important;
+  }
+
+  nav > div {
+    display: flex !important;
+    align-items: center !important;
+    gap: 14px !important;
+
+    max-width: calc(100% - 110px);
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+
+    scrollbar-width: none;
+  }
+
+  nav > div::-webkit-scrollbar {
+    display: none;
+  }
+
+  nav > div a {
+    flex-shrink: 0;
+    white-space: nowrap !important;
+    font-size: 14px !important;
+  }
+
+  nav > div a svg {
+    font-size: 19px !important;
+  }
+
+
+  /* ---------- HERO ---------- */
+
+  .hero {
+    width: 100% !important;
+    min-height: auto !important;
+    height: auto !important;
+
+    margin: 0 !important;
+    padding: 100px 20px 50px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+
+    gap: 30px !important;
+
+    overflow: hidden !important;
+  }
+
+
+  /* ---------- HERO LEFT / IMAGE ---------- */
+
+  .hero-left {
+    order: 2;
+
+    width: 100% !important;
+    height: 360px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    position: relative !important;
+  }
+
+  .profile-glow {
+    width: 230px !important;
+    height: 230px !important;
+
+    position: relative !important;
+    z-index: 5 !important;
+  }
+
+  .profile-glow img {
+    width: 100% !important;
+    height: 100% !important;
+
+    object-fit: cover !important;
+    border-radius: 50% !important;
+  }
+
+
+  /* ---------- ORBITS ---------- */
+
+  .orbit {
+    position: absolute !important;
+    left: 50% !important;
+    top: 50% !important;
+
+    transform: translate(-50%, -50%) !important;
+  }
+
+  .orbit-one {
+    width: 280px !important;
+    height: 280px !important;
+  }
+
+  .orbit-two {
+    width: 330px !important;
+    height: 330px !important;
+  }
+
+
+  /* ---------- FLOATING CARDS ---------- */
+
+  .floating-card {
+    position: absolute !important;
+
+    width: 145px !important;
+    padding: 12px !important;
+
+    z-index: 10 !important;
+
+    font-size: 12px !important;
+  }
+
+  .floating-card strong {
+    font-size: 13px !important;
+  }
+
+  .floating-card span {
+    font-size: 10px !important;
+  }
+
+  .floating-icon {
+    font-size: 18px !important;
+  }
+
+  .developer-card {
+    top: 5px !important;
+    right: 5px !important;
+  }
+
+  .student-card {
+    bottom: 0 !important;
+    left: 5px !important;
+  }
+
+
+  /* ---------- HERO CONTENT ---------- */
+
+  .hero-content {
+    order: 1;
+
+    width: 100% !important;
+    max-width: 100% !important;
+
+    text-align: center !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+
+    padding: 0 !important;
+  }
+
+
+  /* Hello */
+
+  .hello-text {
+    font-size: 22px !important;
+    margin: 0 0 15px !important;
+  }
+
+
+  /* Name */
+
+  .hero-name {
+    font-size: 48px !important;
+    line-height: 1.05 !important;
+
+    margin: 0 !important;
+
+    text-align: center !important;
+  }
+
+  .hero-name span {
+    display: block !important;
+  }
+
+
+  /* Line */
+
+  .name-line {
+    width: 120px !important;
+    height: 4px !important;
+
+    margin: 22px auto !important;
+  }
+
+
+  /* Title */
+
+  .hero-title {
+    font-size: 25px !important;
+    line-height: 1.25 !important;
+
+    max-width: 330px !important;
+
+    margin: 0 auto 20px !important;
+
+    text-align: center !important;
+  }
+
+
+  /* Subtitle */
+
+  .hero-subtitle {
+    font-size: 28px !important;
+    line-height: 1.2 !important;
+
+    margin: 0 0 20px !important;
+
+    text-align: center !important;
+  }
+
+
+  /* Description */
+
+  .hero-description {
+    width: 100% !important;
+    max-width: 340px !important;
+
+    font-size: 16px !important;
+    line-height: 1.7 !important;
+
+    margin: 0 auto 25px !important;
+
+    text-align: center !important;
+  }
+
+
+  /* ---------- SKILLS ---------- */
+
+  .hero-skills {
+    width: 100% !important;
+
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+
+    gap: 10px !important;
+
+    max-width: 300px !important;
+
+    margin: 0 auto 25px !important;
+  }
+
+  .skill-badge {
+    width: 100% !important;
+
+    padding: 10px !important;
+
+    font-size: 14px !important;
+
+    justify-content: center !important;
+  }
+
+
+  /* ---------- BUTTONS ---------- */
+
+  .hero-buttons {
+    width: 100% !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+
+    gap: 12px !important;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    width: 100% !important;
+    max-width: 280px !important;
+
+    justify-content: center !important;
+
+    padding: 13px 20px !important;
+  }
+}
+
+
+/* =====================================================
+   SMALL PHONES
+   ===================================================== */
+
+@media (max-width: 480px) {
+
+  nav {
+    height: 64px !important;
+    padding: 0 14px !important;
+  }
+
+  nav > a:first-child {
+    font-size: 23px !important;
+  }
+
+  nav > div {
+    gap: 12px !important;
+  }
+
+  nav > div a {
+    font-size: 13px !important;
+  }
+
+
+  .hero {
+    padding: 90px 15px 40px !important;
+  }
+
+
+  .hero-name {
+    font-size: 42px !important;
+  }
+
+  .hello-text {
+    font-size: 20px !important;
+  }
+
+  .hero-title {
+    font-size: 23px !important;
+  }
+
+  .hero-subtitle {
+    font-size: 25px !important;
+  }
+
+  .hero-description {
+    font-size: 15px !important;
+  }
+
+
+  .hero-left {
+    height: 320px !important;
+  }
+
+  .profile-glow {
+    width: 205px !important;
+    height: 205px !important;
+  }
+
+  .orbit-one {
+    width: 250px !important;
+    height: 250px !important;
+  }
+
+  .orbit-two {
+    width: 290px !important;
+    height: 290px !important;
+  }
+
+  .floating-card {
+    width: 130px !important;
+    padding: 10px !important;
+  }
+
+  .developer-card {
+    right: 0 !important;
+  }
+
+  .student-card {
+    left: 0 !important;
+  }
+}
+
+/* ================================
+   MOBILE RESPONSIVE DESIGN
+   ================================ */
+
+@media (max-width: 768px) {
+
+  /* Navbar */
+  nav {
+    padding: 14px 18px !important;
+    height: 70px;
+    overflow-x: auto;
+  }
+
+  nav > div {
+    gap: 18px !important;
+    white-space: nowrap;
+  }
+
+  nav a {
+    font-size: 15px !important;
+  }
+
+  /* Hero */
+  .hero {
+    width: 100%;
+    min-height: auto !important;
+    height: auto !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+
+    padding: 100px 20px 50px !important;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  /* Right/content should come first */
+  .hero-content {
+    width: 100% !important;
+    max-width: 100% !important;
+
+    order: 1;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+
+    text-align: center !important;
+
+    padding: 20px 10px !important;
+    box-sizing: border-box;
+  }
+
+  /* Hello */
+  .hello-text {
+    font-size: 24px !important;
+    margin: 10px 0 20px !important;
+  }
+
+  /* Name */
+  .hero-name {
+    font-size: 48px !important;
+    line-height: 1.05 !important;
+
+    text-align: center !important;
+
+    margin: 0 !important;
+  }
+
+  /* Line */
+  .name-line {
+    width: 150px !important;
+    margin: 25px auto !important;
+  }
+
+  /* Degree */
+  .hero-title {
+    font-size: 28px !important;
+    line-height: 1.3 !important;
+
+    max-width: 320px !important;
+
+    text-align: center !important;
+
+    margin: 20px auto !important;
+  }
+
+  /* Student Developer */
+  .hero-subtitle {
+    font-size: 28px !important;
+    line-height: 1.2 !important;
+
+    text-align: center !important;
+
+    margin: 20px auto !important;
+  }
+
+  /* Description */
+  .hero-description {
+    width: 100% !important;
+    max-width: 340px !important;
+
+    font-size: 17px !important;
+    line-height: 1.7 !important;
+
+    text-align: center !important;
+
+    margin: 15px auto 25px !important;
+  }
+
+  /* Skills */
+  .hero-skills {
+    display: grid !important;
+
+    grid-template-columns: repeat(2, 1fr) !important;
+
+    gap: 12px !important;
+
+    width: 100% !important;
+    max-width: 340px !important;
+
+    margin: 10px auto 25px !important;
+  }
+
+  .skill-badge {
+    justify-content: center !important;
+    width: auto !important;
+  }
+
+  /* Buttons */
+  .hero-buttons {
+    display: flex !important;
+    flex-direction: column !important;
+
+    align-items: center !important;
+
+    gap: 15px !important;
+
+    width: 100% !important;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    width: 100% !important;
+    max-width: 300px !important;
+
+    box-sizing: border-box;
+
+    text-align: center !important;
+  }
+
+  /* Profile section */
+  .hero-left {
+    order: 2;
+
+    width: 100% !important;
+    max-width: 100% !important;
+
+    min-height: 420px !important;
+
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    position: relative !important;
+
+    margin-top: 30px !important;
+  }
+
+  /* Profile image */
+  .profile-glow {
+    width: 260px !important;
+    height: 260px !important;
+
+    margin: 0 auto !important;
+  }
+
+  .profile-glow img {
+    width: 100% !important;
+    height: 100% !important;
+
+    object-fit: cover !important;
+  }
+
+  /* Floating cards */
+  .developer-card {
+    top: 20px !important;
+    right: 5px !important;
+    left: auto !important;
+  }
+
+  .student-card {
+    bottom: 20px !important;
+    left: 5px !important;
+    right: auto !important;
+  }
+
+  .floating-card {
+    transform: scale(0.85);
+  }
+
+  /* Orbit */
+  .orbit-one,
+  .orbit-two {
+    transform: scale(0.75);
+  }
+}
+
+
+/* Very small phones */
+@media (max-width: 480px) {
+
+  nav {
+    padding: 12px 15px !important;
+  }
+
+  nav > div {
+    gap: 14px !important;
+  }
+
+  nav a {
+    font-size: 14px !important;
+  }
+
+  .hero {
+    padding: 90px 15px 40px !important;
+  }
+
+  .hero-name {
+    font-size: 42px !important;
+  }
+
+  .hello-text {
+    font-size: 21px !important;
+  }
+
+  .hero-title {
+    font-size: 25px !important;
+  }
+
+  .hero-subtitle {
+    font-size: 25px !important;
+  }
+
+  .hero-description {
+    font-size: 16px !important;
+  }
+
+  .profile-glow {
+    width: 230px !important;
+    height: 230px !important;
+  }
+
+  .hero-left {
+    min-height: 380px !important;
+  }
+
+  .floating-card {
+    transform: scale(0.72);
+  }
+}
