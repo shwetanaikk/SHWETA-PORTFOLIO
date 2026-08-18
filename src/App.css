@@ -6176,3 +6176,22 @@ body,
     transform: scale(0.72);
   }
 }
+
+@media (max-width: 768px) {
+
+  .hero {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  /* PHOTO FIRST */
+  .hero-left {
+    order: 1 !important;
+  }
+
+  /* TEXT SECOND */
+  .hero-content {
+    order: 2 !important;
+  }
+
+}
