@@ -1,15 +1,20 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Hero() {
   return (
     <section className="hero">
 
-      {/* LEFT SIDE - PROFILE */}
+      {/* =========================
+          LEFT SIDE - PROFILE
+      ========================== */}
+
       <div className="hero-left">
 
         <div className="orbit orbit-one"></div>
         <div className="orbit orbit-two"></div>
 
+        {/* Profile Image */}
         <div className="profile-glow">
           <img src="/profile.jpg" alt="Shweta Naik" />
         </div>
@@ -17,6 +22,7 @@ function Hero() {
         {/* Developer Card */}
         <div className="floating-card developer-card">
           <div className="floating-icon">💻</div>
+
           <div>
             <strong>Developer</strong>
             <span>Building the future</span>
@@ -26,6 +32,7 @@ function Hero() {
         {/* Student Card */}
         <div className="floating-card student-card">
           <div className="floating-icon">✨</div>
+
           <div>
             <strong>CSE Student</strong>
             <span>Learning & Growing</span>
@@ -35,19 +42,26 @@ function Hero() {
       </div>
 
 
-      {/* RIGHT SIDE - CONTENT */}
+      {/* =========================
+          RIGHT SIDE - CONTENT
+      ========================== */}
+
       <div className="hero-content">
 
+        {/* Greeting */}
         <p className="hello-text">
           👋 &nbsp;Hello, I'm
         </p>
 
+        {/* Name */}
         <h1 className="hero-name">
           Shweta <span>Naik</span>
         </h1>
 
+        {/* Decorative Line */}
         <div className="name-line"></div>
 
+        {/* Education / Role */}
         <h2 className="hero-title">
           Computer Science Engineering
         </h2>
@@ -56,13 +70,18 @@ function Hero() {
           Student <span>&</span> Developer
         </h3>
 
+        {/* Description */}
         <p className="hero-description">
           Passionate about creating modern web applications,
           solving real-world problems, and continuously improving
           my skills through technology.
         </p>
 
-        {/* Skills */}
+
+        {/* =========================
+            SKILLS
+        ========================== */}
+
         <div className="hero-skills">
 
           <div className="skill-badge">
@@ -87,18 +106,31 @@ function Hero() {
 
         </div>
 
-        {/* Buttons */}
+
+        {/* =========================
+            BUTTONS
+        ========================== */}
+
         <div className="hero-buttons">
 
-          <a href="/projects" className="primary-btn">
+          {/* Projects */}
+          <Link
+            to="/projects"
+            className="primary-btn"
+          >
             View My Projects
             <span>→</span>
-          </a>
+          </Link>
 
-          <a href="/contact" className="secondary-btn">
+
+          {/* Contact */}
+          <Link
+            to="/contact"
+            className="secondary-btn"
+          >
             Contact Me
             <span>→</span>
-          </a>
+          </Link>
 
         </div>
 
