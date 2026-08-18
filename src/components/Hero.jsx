@@ -11,17 +11,23 @@ function Hero() {
 
       <div className="hero-left">
 
+        {/* Decorative Orbits */}
         <div className="orbit orbit-one"></div>
         <div className="orbit orbit-two"></div>
 
         {/* Profile Image */}
         <div className="profile-glow">
-          <img src="/profile.jpg" alt="Shweta Naik" />
+          <img
+            src="/profile.jpg"
+            alt="Shweta Naik"
+          />
         </div>
 
         {/* Developer Card */}
         <div className="floating-card developer-card">
-          <div className="floating-icon">💻</div>
+          <div className="floating-icon">
+            💻
+          </div>
 
           <div>
             <strong>Developer</strong>
@@ -31,7 +37,9 @@ function Hero() {
 
         {/* Student Card */}
         <div className="floating-card student-card">
-          <div className="floating-icon">✨</div>
+          <div className="floating-icon">
+            ✨
+          </div>
 
           <div>
             <strong>CSE Student</strong>
@@ -61,11 +69,12 @@ function Hero() {
         {/* Decorative Line */}
         <div className="name-line"></div>
 
-        {/* Education / Role */}
+        {/* Degree */}
         <h2 className="hero-title">
           Computer Science Engineering
         </h2>
 
+        {/* Role */}
         <h3 className="hero-subtitle">
           Student <span>&</span> Developer
         </h3>
@@ -113,7 +122,7 @@ function Hero() {
 
         <div className="hero-buttons">
 
-          {/* Projects */}
+          {/* View Projects */}
           <Link
             to="/projects"
             className="primary-btn"
@@ -131,6 +140,17 @@ function Hero() {
             Contact Me
             <span>→</span>
           </Link>
+
+
+          {/* Download Resume */}
+          <a
+            href="/resume.pdf"
+            download="Shweta_Naik_Resume.pdf"
+            className="resume-btn"
+          >
+            Download Resume
+            <span>↓</span>
+          </a>
 
         </div>
 
